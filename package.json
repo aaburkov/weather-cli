@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "CLIfor getting weather",
   "main": "index.js",
-  "bin": "./index.js",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "type": "module",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,5 +24,8 @@
   "bugs": {
     "type": "git",
     "url": "https://github.com/aaburkov/weather-cli"
+  },
+  "dependencies": {
+    "axios": "^1.6.7"
   }
 }
